@@ -1,44 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/openCameraButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/open_camera" />
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/chooseJsonButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/choose_json" />
+        <Button
+            android:id="@+id/openCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_camera" />
 
-    <EditText
-        android:id="@+id/numberInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_number"
-        android:importantForAutofill="no"
-        android:inputType="numberSigned" />
+        <Button
+            android:id="@+id/chooseJsonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_json" />
 
-    <Button
-        android:id="@+id/solveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/solve_board" />
+        <EditText
+            android:id="@+id/numberInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_number"
+            android:importantForAutofill="no"
+            android:inputType="numberSigned" />
 
-    <TextView
-        android:id="@+id/resultTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/solveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solve_board" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/listCombinations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_combinations" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
